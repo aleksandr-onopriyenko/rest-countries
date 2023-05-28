@@ -7,14 +7,14 @@ export const useCountryBorders = (
   isFetch: boolean,
   country?: DetailsCountry
 ) => {
-  const [borderValue, setBorderValue] = useState<string[] | undefined>();
+  const [borderValue, setBorderValue] = useState<string[]>([]);
   const { data: borders, isFetching } = useGetCodesQuery(borderValue, {
     skip: !borderValue || !borderValue.length,
   });
 
   useEffect(() => {
     if (country && country.borders) {
-      setBorderValue(() => country.borders);
+      setBorderValue(() => country.borders!);
     }
   }, [country]);
 
