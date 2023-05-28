@@ -1,0 +1,1 @@
+export { formatPopulation } from "./formatPopulations";
