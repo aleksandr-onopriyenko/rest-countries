@@ -1,0 +1,18 @@
+.select {
+  width: 100%;
+
+  & #react-select-3-listbox {
+    background-color: var(--bg-elements);
+    display: block;
+    z-index: 9000;
+    div {
+      div {
+        &:hover,
+        &:active,
+        &.css-d7l1ni-option {
+          background-color: var(--box-shadow);
+        }
+      }
+    }
+  }
+}
