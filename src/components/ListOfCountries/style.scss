@@ -1,0 +1,20 @@
+.countries {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 5rem;
+  max-width: var(--desktop);
+  margin-inline: auto;
+
+  @media (min-width: 528px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
