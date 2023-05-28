@@ -1,0 +1,26 @@
+.filters {
+  margin-block: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  & > div:first-child {
+    width: 100%;
+  }
+
+  & > div:last-child {
+    width: 100%;
+  }
+
+  @media (min-width: 900px) {
+    & > div:first-child {
+      width: 30%;
+    }
+
+    & > div:last-child {
+      width: 20%;
+    }
+  }
+}
